@@ -1,0 +1,31 @@
+@* @{
+    ViewData["Title"] = "About";
+}
+
+<h1>About</h1>
+<p>Welcome to the About page of our Movie App!</p>
+<p>This application allows you to manage and browse movies seamlessly.</p> *@
+
+
+@{
+    ViewData["Title"] = "About Us";
+}
+
+<div class="text-center">
+    <h1 class="display-4">About the Movies App</h1>
+    <p>Welcome to my Movies application, a platform dedicated to providing an extensive collection of movies across various genres. Whether you are a fan of action-packed thrillers, romantic comedies, or thought-provoking dramas, our app has something for everyone.</p>
+    
+    <h3>My Mission</h3>
+    <p>My mission is to make it easy for movie lovers to find and explore their favorite films, discover new releases, and keep track of the latest in the world of cinema. We aim to provide a user-friendly interface that allows easy browsing, searching, and movie details.</p>
+    
+    <h3>Features</h3>
+    <ul>
+        <li><strong>Browse Movies:</strong> Easily browse through our collection of movies, sorted by genre, release date, or popularity.</li>
+        <li><strong>Search Functionality:</strong> Find your favorite movies quickly using our powerful search feature.</li>
+        <li><strong>Detailed Information:</strong> Get detailed information about each movie, including synopsis, cast, release date, and more.</li>
+        <li><strong>CRUD Operations:</strong> As an admin, you can add, edit, and delete movie details directly from the application.</li>
+    </ul>
+
+    <h3>Get in Touch</h3>
+    <p>If you have any questions, feedback, or suggestions, feel free to contact me via my <a href="@Url.Action("Contact", "Home")">Contact Us</a> page.</p>
+</div>
