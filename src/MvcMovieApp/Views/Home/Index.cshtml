@@ -1,8 +1,26 @@
-﻿@{
+﻿@* @{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learning about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learning about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
+    <!-- Links to the new pages -->
+    <p>Check out these additional pages:</p>
+    <ul>
+        <li><a href="@Url.Action("About", "Home")">About Us</a></li>
+        <li><a href="@Url.Action("Contact", "Home")">Contact Us</a></li>
+        <li><a href="@Url.Action("Greet", "Home", new { name = "Shiva Teja", age = 24 })">Greet</a></li>
+    </ul>
 </div>
